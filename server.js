@@ -5,7 +5,7 @@
 
 var express = require('express');
 var app     = express();
-var port    = 	process.env.PORT || 3000;
+var port    = 	process.env.PORT || 3030;
 
 // ROUTES
 // ==============================================
@@ -59,7 +59,7 @@ router.get('/hello/:name', function(req, res) {
 });
 
 // apply the routes to our application
-app.use('/', router);
+app.use('/larry', router);
 
 // login routes
 app.route('/login')
